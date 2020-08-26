@@ -18,5 +18,4 @@ svm = SVC()
 svm.fit(X_train_scaled, y_train)
 
 dump(svm, here("./python_model.joblib", warn=False))
-
-del svm
+dump(X_test_scaled, here("test_data.joblib", warn=False))
